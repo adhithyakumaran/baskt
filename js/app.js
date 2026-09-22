@@ -40,44 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ------------------------------------------------------------------------
-     2. Cookie & Session Fast Loading Banner
-     ------------------------------------------------------------------------ */
-  const cookieBanner = document.getElementById("cookie-banner");
-  const btnAcceptCookies = document.getElementById("btn-accept-cookies");
-  const btnDismissCookies = document.getElementById("btn-dismiss-cookies");
-
-  const isFastCacheEnabled = sessionStorage.getItem("baskt_fast_cache");
-  if (isFastCacheEnabled && cookieBanner) {
-    cookieBanner.classList.add("hidden");
-  }
-
-  if (btnAcceptCookies && cookieBanner) {
-    btnAcceptCookies.addEventListener("click", () => {
-      sessionStorage.setItem("baskt_fast_cache", "true");
-      localStorage.setItem("baskt_pref_location", currentLocationId);
-      cookieBanner.innerHTML = `
-        <div style="display:flex; align-items:center; gap:12px;">
-          <span style="font-size:1.4rem;">⚡</span>
-          <div>
-            <strong>Fast Cache Enabled</strong>
-            <p style="font-size:0.8rem; margin:0; opacity:0.85;">Local dark store inventory paths are pre-cached for sub-millisecond calculation.</p>
-          </div>
-        </div>
-      `;
-      setTimeout(() => {
-        cookieBanner.classList.add("hidden");
-      }, 1800);
-    });
-  }
-
-  if (btnDismissCookies && cookieBanner) {
-    btnDismissCookies.addEventListener("click", () => {
-      cookieBanner.classList.add("hidden");
-    });
-  }
-
-  /* ------------------------------------------------------------------------
-     3. Location Selector
+     2. Location Selector
      ------------------------------------------------------------------------ */
   const locationSelect = document.getElementById("sim-location-select");
   function setupLocations() {

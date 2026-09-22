@@ -92,13 +92,24 @@ html {
   color: var(--color-text-main);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 body {
   font-family: var(--font-body);
   line-height: 1.55;
-  overflow-x: hidden;
+  overflow-x: clip;
   background-color: var(--color-cream);
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 a {
@@ -130,6 +141,7 @@ img, svg {
   margin-right: auto;
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
+  min-width: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -482,6 +494,11 @@ img, svg {
   position: relative;
   z-index: 2;
   width: 100%;
+  min-width: 0;
+}
+
+.hero-content-grid > * {
+  min-width: 0;
 }
 
 .hero-headline {
@@ -1924,6 +1941,7 @@ img, svg {
   width: 100%;
   max-width: 360px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .flywheel-circle {
@@ -2160,100 +2178,13 @@ img, svg {
 }
 
 /* --------------------------------------------------------------------------
-   16. Sleek Black, Stretched, Low-Height Session Cookie Banner
-   -------------------------------------------------------------------------- */
-.cookie-session-banner {
-  position: fixed;
-  bottom: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 36px);
-  max-width: 960px;
-  background: #0B0E09;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: var(--radius-md);
-  padding: 18px 26px;
-  min-height: 84px;
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.65);
-  z-index: 1500;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  color: #FFFFFF;
-  transition: transform 0.35s var(--ease-spring), opacity 0.35s ease;
-}
-
-.cookie-session-banner.hidden {
-  transform: translateX(-50%) translateY(140%);
-  opacity: 0;
-  pointer-events: none;
-}
-
-.cookie-content-wrap {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.cookie-icon {
-  font-size: 1.3rem;
-  color: #F5A623;
-}
-
-.cookie-text h5 {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.95rem;
-  margin-bottom: 4px;
-  color: #FFFFFF;
-}
-
-.cookie-text p {
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.72);
-  line-height: 1.45;
-}
-
-.cookie-actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-}
-
-.btn-cookie-accept {
-  background: #FFFFFF;
-  color: #000000;
-  padding: 10px 18px;
-  border-radius: var(--radius-pill);
-  font-size: 0.84rem;
-  font-weight: 700;
-  transition: background var(--transition-fast);
-}
-
-.btn-cookie-accept:hover {
-  background: #E5E7EB;
-}
-
-.btn-cookie-dismiss {
-  background: rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.85);
-  padding: 10px 16px;
-  border-radius: var(--radius-pill);
-  font-size: 0.84rem;
-  font-weight: 600;
-}
-
-/* --------------------------------------------------------------------------
-   17. Modal Dialog
+   16. Modal Dialog
    -------------------------------------------------------------------------- */
 .modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(8, 16, 4, 0.78);
   backdrop-filter: blur(10px);
   z-index: 2000;
@@ -2407,20 +2338,40 @@ img, svg {
   .architecture-canvas {
     padding: 28px 20px;
   }
-  .cookie-session-banner {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 20px 22px;
-    min-height: auto;
-  }
-  .cookie-actions {
-    width: 100%;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
 }
 
 @media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .site-header,
+  .site-footer {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .section-label {
+    white-space: normal;
+    text-align: left;
+  }
+
+  .pipeline-node {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .hero-visual-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .footer-col-links a,
+  .footer-disclaimer-note {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
   .nav-links, .nav-actions .btn-call-us {
     display: none;
   }
@@ -2552,18 +2503,17 @@ img, svg {
   .logo-sub {
     font-size: 0.58rem;
   }
-  .cookie-session-banner {
-    bottom: 12px;
-    width: calc(100% - 24px);
-    padding: 18px 18px;
-  }
-  .cookie-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .cookie-actions button {
-    width: 100%;
+  .btn-pill {
+    white-space: normal;
     text-align: center;
+  }
+  .section-hero {
+    overflow-x: clip;
+  }
+  .display-title,
+  .hero-headline,
+  h1, h2, h3 {
+    overflow-wrap: anywhere;
   }
   .modal-card {
     padding: 24px 20px;

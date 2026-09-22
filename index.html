@@ -58,10 +58,8 @@
   <!-- Mobile Drawer Menu -->
   <div id="mobile-nav-drawer" style="display:none;" class="mobile-drawer">
     <div style="padding:22px; display:flex; flex-direction:column; gap:16px;">
-      <a href="#product" class="nav-link">Product</a>
       <a href="#how-it-works" class="nav-link">How it works</a>
-      <a href="#technology" class="nav-link">Technology</a>
-      <a href="#vision" class="nav-link">Vision</a>
+      <a href="#waitlist" class="nav-link">Early access</a>
       <a href="tel:+919965985951" class="btn-pill btn-call-us" style="justify-content:center;">
         <svg class="icon-call" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.55.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.55 1 1 0 01-.24 1.01l-2.2 2.23z"/></svg>
         Call Us
@@ -136,7 +134,7 @@
           </div>
 
           <!-- Right Column: Compact Centerpiece Architecture Visual -->
-          <div class="hero-visual-card" aria-label="Conceptual Architecture Pipeline Visualization">
+          <div class="hero-visual-card hide-on-mobile" aria-label="Conceptual Architecture Pipeline Visualization">
             <div class="hero-visual-header">
               <span style="font-family:var(--font-mono); font-size:0.72rem; color:rgba(255,255,255,0.7); text-transform:uppercase; font-weight:700;">
                 Live Basket Routing Demo
@@ -218,7 +216,7 @@
     <!-- ======================================================================
          SECTION 2 — THE PROBLEM (Dark Forest Narrative)
          ====================================================================== -->
-    <section class="section-problem" id="problem">
+    <section class="section-problem hide-on-mobile" id="problem">
       <div class="container">
         <div class="section-problem-header">
           <span class="section-label light">The Friction</span>
@@ -300,7 +298,7 @@
     <!-- ======================================================================
          SECTION 3 — THE IDEA (Clean Architecture Stack)
          ====================================================================== -->
-    <section class="section-idea" id="product">
+    <section class="section-idea hide-on-mobile" id="product">
       <div class="container">
         <div class="section-idea-header">
           <span class="section-label dark">Architecture</span>
@@ -496,7 +494,7 @@
     <!-- ======================================================================
          SECTION 5 — LIVE CONCEPT DEMO (Interactive Simulator)
          ====================================================================== -->
-    <section class="section-demo" id="demo">
+    <section class="section-demo hide-on-mobile" id="demo">
       <div class="container">
         <div class="demo-header-wrapper">
           <div class="demo-header-text">
@@ -624,7 +622,7 @@
     <!-- ======================================================================
          SECTION 6 — WHY LOCATION MATTERS
          ====================================================================== -->
-    <section class="section-location" id="technology">
+    <section class="section-location hide-on-mobile" id="technology">
       <div class="container">
         <div class="section-location-header">
           <span class="section-label light">Hyperlocal Dynamics</span>
@@ -714,7 +712,7 @@
     <!-- ======================================================================
          SECTION 7 — THE INTELLIGENCE (7 Vectors & Core Axiom)
          ====================================================================== -->
-    <section class="section-intelligence" id="intelligence">
+    <section class="section-intelligence hide-on-mobile" id="intelligence">
       <div class="container">
         <div class="intelligence-hero-banner">
           <span class="section-label dark">Deep Commerce AI</span>
@@ -807,7 +805,7 @@
     <!-- ======================================================================
          SECTION 8 — FUTURE EXPERIENCE (Roadmap & Autonomous Sync)
          ====================================================================== -->
-    <section class="section-future" id="future">
+    <section class="section-future hide-on-mobile" id="future">
       <div class="container">
         <div class="section-future-header">
           <span class="section-label dark">Roadmap</span>
@@ -912,7 +910,7 @@
     <!-- ======================================================================
          SECTION 9 — VISION & COMMERCE FLYWHEEL (Motion Graphics)
          ====================================================================== -->
-    <section class="section-vision" id="vision">
+    <section class="section-vision hide-on-mobile" id="vision">
       <div class="container">
         <div class="vision-header">
           <span class="section-label light">Long-Term Thesis</span>
@@ -1044,7 +1042,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="hide-on-mobile">
           <div class="footer-col-title">Platform</div>
           <div class="footer-col-links">
             <a href="#product">Product Concept</a>
@@ -1054,7 +1052,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="hide-on-mobile">
           <div class="footer-col-title">Architecture</div>
           <div class="footer-col-links">
             <a href="#technology">Geofence Routing</a>
@@ -1086,27 +1084,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- ========================================================================
-       SESSION COOKIE BANNER (Black, Stretched, Low Height)
-       ======================================================================== -->
-  <div id="cookie-banner" class="cookie-session-banner" role="region" aria-label="Session and Cookie Preferences">
-    <div class="cookie-content-wrap">
-      <span class="cookie-icon">⚡</span>
-      <div class="cookie-text">
-        <h5>Optimize Session for Faster Loading</h5>
-        <p>We cache your delivery geofence in a local session cookie for instant sub-millisecond dark store queries.</p>
-      </div>
-    </div>
-    <div class="cookie-actions">
-      <button type="button" id="btn-accept-cookies" class="btn-cookie-accept">
-        Enable Fast Cache
-      </button>
-      <button type="button" id="btn-dismiss-cookies" class="btn-cookie-dismiss">
-        Dismiss
-      </button>
-    </div>
-  </div>
 
   <!-- ========================================================================
        MODAL DIALOG: WAITLIST & DIRECT CALL
