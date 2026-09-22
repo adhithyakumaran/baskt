@@ -310,6 +310,28 @@ img, svg {
   transform: translateY(-2px);
 }
 
+.btn-call-us .icon-call {
+  width: 1.05em;
+  height: 1.05em;
+  flex-shrink: 0;
+  color: var(--color-forest);
+}
+
+.btn-call-us:hover .icon-call {
+  color: #FFFFFF;
+}
+
+.btn-light-outline .icon-call {
+  width: 1.05em;
+  height: 1.05em;
+  flex-shrink: 0;
+}
+
+.icon-call {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .btn-primary {
   background: var(--color-forest);
   color: #FFFFFF;
@@ -1899,6 +1921,9 @@ img, svg {
   align-items: center;
   position: relative;
   min-height: 340px;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
 }
 
 .flywheel-circle {
@@ -1919,6 +1944,10 @@ img, svg {
 }
 
 .flywheel-center-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 110px;
   height: 110px;
   background: var(--color-olive);
@@ -1930,6 +1959,7 @@ img, svg {
   text-align: center;
   box-shadow: 0 0 35px rgba(91, 132, 24, 0.55);
   z-index: 5;
+  pointer-events: none;
 }
 
 .flywheel-center-core span {
@@ -2142,7 +2172,8 @@ img, svg {
   background: #0B0E09;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius-md);
-  padding: 10px 22px;
+  padding: 18px 26px;
+  min-height: 84px;
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.65);
   z-index: 1500;
   display: flex;
@@ -2173,15 +2204,15 @@ img, svg {
 .cookie-text h5 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 0.88rem;
-  margin-bottom: 1px;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
   color: #FFFFFF;
 }
 
 .cookie-text p {
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   color: rgba(255, 255, 255, 0.72);
-  line-height: 1.3;
+  line-height: 1.45;
 }
 
 .cookie-actions {
@@ -2194,9 +2225,9 @@ img, svg {
 .btn-cookie-accept {
   background: #FFFFFF;
   color: #000000;
-  padding: 7px 16px;
+  padding: 10px 18px;
   border-radius: var(--radius-pill);
-  font-size: 0.8rem;
+  font-size: 0.84rem;
   font-weight: 700;
   transition: background var(--transition-fast);
 }
@@ -2208,9 +2239,9 @@ img, svg {
 .btn-cookie-dismiss {
   background: rgba(255, 255, 255, 0.12);
   color: rgba(255, 255, 255, 0.85);
-  padding: 7px 12px;
+  padding: 10px 16px;
   border-radius: var(--radius-pill);
-  font-size: 0.8rem;
+  font-size: 0.84rem;
   font-weight: 600;
 }
 
@@ -2354,13 +2385,38 @@ img, svg {
   }
   .flywheel-showcase {
     grid-template-columns: 1fr;
+    padding: 36px 24px;
+  }
+  .location-flow-grid {
+    grid-template-columns: 1fr;
+  }
+  .platforms-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .roadmap-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   .problem-steps-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .cookie-session-banner {
+  .problem-summary-banner {
     flex-direction: column;
     align-items: flex-start;
+    text-align: left;
+  }
+  .architecture-canvas {
+    padding: 28px 20px;
+  }
+  .cookie-session-banner {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 22px;
+    min-height: auto;
+  }
+  .cookie-actions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 }
 
@@ -2403,5 +2459,134 @@ img, svg {
   .future-flow-banner {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .section-problem,
+  .section-idea,
+  .section-how,
+  .section-demo,
+  .section-location,
+  .section-intelligence,
+  .section-roadmap,
+  .section-vision,
+  .section-final-cta {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .section-hero {
+    padding-top: calc(var(--nav-height) + 20px);
+    padding-bottom: 48px;
+  }
+  .hero-headline {
+    font-size: clamp(1.85rem, 8vw, 2.4rem);
+  }
+  .hero-desc {
+    font-size: 1rem;
+  }
+  .hero-stats-strip {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-cta-group .btn-playstore,
+  .hero-cta-group .btn-pill {
+    width: 100%;
+    justify-content: center;
+  }
+  .how-step-card {
+    min-height: auto;
+  }
+  .roadmap-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .platforms-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .rel-graph-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .rel-graph-row .rel-graph-bar-track {
+    order: 2;
+  }
+  .demo-header-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cta-buttons-row {
+    flex-direction: column;
+    width: 100%;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-buttons-row .btn-pill,
+  .cta-buttons-row .btn-playstore {
+    width: 100%;
+  }
+  .flywheel-graphic-container {
+    min-height: 300px;
+  }
+  .flywheel-circle {
+    width: min(280px, 78vw);
+    height: min(280px, 78vw);
+  }
+  .flywheel-center-core {
+    width: 100px;
+    height: 100px;
+  }
+  .flywheel-center-core span {
+    font-size: 1rem;
+  }
+  .vision-header {
+    margin-bottom: 36px;
+  }
+  .vision-header p {
+    font-size: 1rem;
+  }
+  .logo-text {
+    font-size: 1.25rem;
+  }
+  .logo-sub {
+    font-size: 0.58rem;
+  }
+  .cookie-session-banner {
+    bottom: 12px;
+    width: calc(100% - 24px);
+    padding: 18px 18px;
+  }
+  .cookie-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cookie-actions button {
+    width: 100%;
+    text-align: center;
+  }
+  .modal-card {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 16px;
+  }
+  .hero-stores-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+  .arch-destination-stores {
+    grid-template-columns: 1fr;
+  }
+  .problem-steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav-actions .btn-primary {
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 0.8rem;
   }
 }
