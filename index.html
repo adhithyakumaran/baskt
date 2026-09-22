@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baskt — The Quick-Commerce Shopping Intelligence Layer</title>
+  <meta name="description" content="One basket. Every store. Better decisions. Baskt is an intelligent shopping layer comparing your entire grocery basket across India's leading commerce platforms." />
+  
+  <!-- Typography Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       SITE HEADER / NAVIGATION
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      
+      <!-- Restored Original Square B Logo + Baskt + Intelligence -->
+      <a href="#" class="logo-wrapper" aria-label="Baskt Home">
+        <div class="logo-mark" aria-hidden="true">B</div>
+        <div>
+          <span class="logo-text">Baskt</span>
+          <span class="logo-sub">Intelligence</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" role="navigation" aria-label="Primary Navigation">
+        <a href="#product" class="nav-link">Product</a>
+        <a href="#how-it-works" class="nav-link">How it works</a>
+        <a href="#technology" class="nav-link">Technology</a>
+        <a href="#vision" class="nav-link">Vision</a>
+      </nav>
+
+      <!-- Navigation Actions (Call Us instead of showing raw number) -->
+      <div class="nav-actions">
+        <a href="tel:+919965985951" class="btn-pill btn-call-us" title="Call our team">
+          <span>📞</span> Call Us
+        </a>
+        <button type="button" class="btn-pill btn-primary trigger-waitlist-modal">Join waitlist</button>
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-nav-drawer" style="display:none;" class="mobile-drawer">
+    <div style="padding:22px; display:flex; flex-direction:column; gap:16px;">
+      <a href="#product" class="nav-link">Product</a>
+      <a href="#how-it-works" class="nav-link">How it works</a>
+      <a href="#technology" class="nav-link">Technology</a>
+      <a href="#vision" class="nav-link">Vision</a>
+      <a href="tel:+919965985951" class="btn-pill btn-call-us" style="justify-content:center;">
+        <span>📞</span> Call Us
+      </a>
+      <button type="button" class="btn-pill btn-primary trigger-waitlist-modal">Join waitlist</button>
+    </div>
+  </div>
+
+  <main role="main">
+    <!-- ======================================================================
+         SECTION 1 — HERO SECTION (Viewport Snug Fit & Play Store CTA)
+         ====================================================================== -->
+    <section class="section-hero" id="hero">
+      
+      <!-- Motion Graphic Ambient Waves -->
+      <svg class="hero-bg-motion" viewBox="0 0 1440 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-100 200 C 300 400, 600 50, 1000 300 C 1200 420, 1400 200, 1600 350" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-dasharray="8 8" class="data-flow-pulse" />
+        <path d="M-100 320 C 200 150, 700 500, 1100 220 C 1300 100, 1500 380, 1700 200" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+      </svg>
+
+      <div class="container">
+        <div class="hero-content-grid">
+          
+          <!-- Left Column: Clear Bold Headline, Description & Play Store CTA -->
+          <div class="hero-copy-column">
+            <span class="section-label light">
+              <span>●</span> Quick-Commerce Intelligence Layer
+            </span>
+            
+            <h1 class="display-title hero-headline">
+              One basket.<br />
+              Every store.<br />
+              Better decisions.
+            </h1>
+
+            <p class="hero-desc">
+              An intelligent shopping layer that compares your basket across India's leading commerce platforms.
+            </p>
+
+            <!-- Minimal, focused CTAs featuring Google Play Store -->
+            <div class="hero-cta-group">
+              <a href="#waitlist" class="btn-playstore trigger-waitlist-modal" title="Download on Google Play">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.609 1.814C3.393 2.051 3.25 2.427 3.25 2.923V21.077C3.25 21.573 3.393 21.949 3.61 22.186L3.69 22.257L13.882 12.065V11.935L3.689 1.743L3.609 1.814Z" fill="#2196F3"/>
+                  <path d="M17.276 15.46L13.882 12.065V11.935L17.276 8.54L17.362 8.589L21.385 10.876C22.534 11.527 22.534 12.473 21.385 13.125L17.362 15.411L17.276 15.46Z" fill="#FFC107"/>
+                  <path d="M17.362 15.411L13.882 11.935L3.609 22.208C3.992 22.613 4.636 22.668 5.372 22.25L17.362 15.411Z" fill="#F44336"/>
+                  <path d="M17.362 8.589L5.372 1.75C4.636 1.332 3.992 1.387 3.609 1.792L13.882 12.065L17.362 8.589Z" fill="#4CAF50"/>
+                </svg>
+                <div class="playstore-text-group">
+                  <span class="playstore-sub">GET IT ON</span>
+                  <span class="playstore-main">Google Play</span>
+                </div>
+              </a>
+              
+              <a href="#how-it-works" class="btn-pill btn-light-outline">See how it works</a>
+            </div>
+
+            <div class="hero-stats-strip">
+              <div class="hero-stat-item">
+                <span class="hero-stat-value">5+</span>
+                <span class="hero-stat-label">Platforms Normalized</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-value">&lt; 2.5km</span>
+                <span class="hero-stat-label">Dark Store Geofencing</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-value">₹40 - ₹95</span>
+                <span class="hero-stat-label">Avg. Savings / Basket</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Compact Centerpiece Architecture Visual -->
+          <div class="hero-visual-card" aria-label="Conceptual Architecture Pipeline Visualization">
+            <div class="hero-visual-header">
+              <span style="font-family:var(--font-mono); font-size:0.72rem; color:rgba(255,255,255,0.7); text-transform:uppercase; font-weight:700;">
+                Live Basket Routing Demo
+              </span>
+              <div class="hero-badge-status">
+                <div class="pulse-dot"></div>
+                Fulfillment Engine Active
+              </div>
+            </div>
+
+            <!-- Stage 1: Shopping List Input -->
+            <div class="pipeline-node highlight">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span style="font-size:1.15rem;">📝</span>
+                <div>
+                  <div style="font-family:var(--font-display); font-weight:800; font-size:0.88rem; color:#FFFFFF;">Your Shopping List</div>
+                  <div style="font-size:0.72rem; color:rgba(255,255,255,0.8);">Milk, Eggs, Bread, Banana, Rice, Toothpaste</div>
+                </div>
+              </div>
+              <span style="font-family:var(--font-mono); font-size:0.68rem; color:#A4EA88; font-weight:700;">INPUT</span>
+            </div>
+
+            <svg class="pipeline-connector-svg" viewBox="0 0 300 18" fill="none">
+              <line x1="150" y1="0" x2="150" y2="18" stroke="#A4EA88" stroke-width="2" class="data-flow-pulse" />
+            </svg>
+
+            <!-- Stage 2: Baskt Intelligence Layer -->
+            <div class="pipeline-node" style="background:rgba(91,132,24,0.32); border-color:rgba(123,175,34,0.55);">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span style="font-size:1.15rem;">🧠</span>
+                <div>
+                  <div style="font-family:var(--font-display); font-weight:800; font-size:0.88rem; color:#FFFFFF;">Baskt Intelligence Layer</div>
+                  <div style="font-size:0.72rem; color:rgba(255,255,255,0.8);">Geofencing · Pack Size Parity · Fee Normalization</div>
+                </div>
+              </div>
+              <span style="font-family:var(--font-mono); font-size:0.68rem; color:#C4F4B0; font-weight:700;">CALCULATING</span>
+            </div>
+
+            <svg class="pipeline-connector-svg" viewBox="0 0 300 18" fill="none">
+              <line x1="150" y1="0" x2="150" y2="18" stroke="#C4F4B0" stroke-width="2" class="data-flow-pulse" />
+            </svg>
+
+            <!-- Stage 3: Dynamic Store Pricing Comparison -->
+            <div class="hero-stores-grid">
+              <div class="hero-store-pill">
+                <div class="hero-store-name">Zepto</div>
+                <div class="hero-store-price">₹708</div>
+                <div style="font-size:0.62rem; color:rgba(255,255,255,0.7);">9 min ETA</div>
+              </div>
+
+              <div class="hero-store-pill">
+                <div class="hero-store-name">Blinkit</div>
+                <div class="hero-store-price">₹741</div>
+                <div style="font-size:0.62rem; color:rgba(255,255,255,0.7);">12 min ETA</div>
+              </div>
+
+              <div class="hero-store-pill best-winner">
+                <div class="hero-store-name" style="color:#FFAF7B;">Instamart</div>
+                <div class="hero-store-price">₹700</div>
+                <span class="hero-store-badge">Lowest Basket</span>
+              </div>
+
+              <div class="hero-store-pill">
+                <div class="hero-store-name">BigBasket</div>
+                <div class="hero-store-price">₹729</div>
+                <div style="font-size:0.62rem; color:rgba(255,255,255,0.7);">14 min ETA</div>
+              </div>
+            </div>
+
+            <div style="margin-top:12px; text-align:center; font-family:var(--font-mono); font-size:0.68rem; color:rgba(255,255,255,0.55);">
+              Deterministic multi-store pricing with item-level fee reconciliation
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 2 — THE PROBLEM (Dark Forest Narrative)
+         ====================================================================== -->
+    <section class="section-problem" id="problem">
+      <div class="container">
+        <div class="section-problem-header">
+          <span class="section-label light">The Friction</span>
+          <h2 class="display-title">Shopping shouldn't require checking five apps.</h2>
+          <p>
+            Quick commerce is fractured across siloed dark stores, differing pack sizes, dynamic delivery surcharges, and stealth platform fees.
+          </p>
+        </div>
+
+        <div class="problem-timeline-container">
+          <div class="problem-steps-grid">
+            
+            <div class="problem-step-card">
+              <span class="step-num-badge">01</span>
+              <div class="step-icon-bubble">📋</div>
+              <h4 class="step-title">User Has A List</h4>
+              <p class="step-meta">6 everyday items needed in 15 minutes</p>
+            </div>
+
+            <div class="problem-step-card">
+              <span class="step-num-badge">02</span>
+              <div class="step-icon-bubble">📱</div>
+              <h4 class="step-title">Opens App 1</h4>
+              <p class="step-meta">Switches into Zepto or Blinkit</p>
+            </div>
+
+            <div class="problem-step-card">
+              <span class="step-num-badge">03</span>
+              <div class="step-icon-bubble">🔍</div>
+              <h4 class="step-title">Searches Products</h4>
+              <p class="step-meta">Checks brands, pack sizes, gram quantities</p>
+            </div>
+
+            <div class="problem-step-card">
+              <span class="step-num-badge">04</span>
+              <div class="step-icon-bubble">🏷️</div>
+              <h4 class="step-title">Checks Prices</h4>
+              <p class="step-meta">Adds to cart, notes subtotal</p>
+            </div>
+
+            <div class="problem-step-card">
+              <span class="step-num-badge">05</span>
+              <div class="step-icon-bubble">📲</div>
+              <h4 class="step-title">Opens App 2</h4>
+              <p class="step-meta">Jumps to Swiggy Instamart or BigBasket</p>
+            </div>
+
+            <div class="problem-step-card">
+              <span class="step-num-badge">06</span>
+              <div class="step-icon-bubble">🔁</div>
+              <h4 class="step-title">Repeats Cycle</h4>
+              <p class="step-meta">Types out every item again manually</p>
+            </div>
+
+            <div class="problem-step-card frustration-climax">
+              <span class="step-num-badge" style="color:#FFAF7B;">07</span>
+              <div class="step-icon-bubble">❓</div>
+              <h4 class="step-title" style="color:#FFAF7B;">Still Doesn't Know</h4>
+              <p class="step-meta" style="color:rgba(255,255,255,0.85);">Surge fees and cart minimums obscure true winner</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="problem-summary-banner">
+          <div class="problem-summary-text">
+            <span class="problem-summary-icon">⏳</span>
+            <div>
+              <h4>12 minutes wasted per quick-commerce order</h4>
+              <p>Users juggle 3 to 5 apps, losing money to unnoticed surge multipliers and small-cart handling penalties.</p>
+            </div>
+          </div>
+          <a href="#product" class="btn-pill btn-light-primary">Discover the Solution</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 3 — THE IDEA (Clean Architecture Stack)
+         ====================================================================== -->
+    <section class="section-idea" id="product">
+      <div class="container">
+        <div class="section-idea-header">
+          <span class="section-label dark">Architecture</span>
+          <h2 class="display-title">We built the intelligence layer between your list and the stores.</h2>
+          <p>
+            Baskt abstracts away proprietary app catalogs, translating your high-level intent into deterministic whole-basket comparisons in milliseconds.
+          </p>
+        </div>
+
+        <div class="architecture-canvas">
+          <div class="architecture-stack">
+            
+            <div class="arch-layer input-layer">
+              <div class="arch-layer-badge">
+                <span class="arch-icon">📝</span>
+                <span class="arch-layer-name">Your Shopping List</span>
+              </div>
+              <div class="arch-layer-desc">
+                Plain-text, voice notes, or pantry essentials with flexible brand preferences and quantities.
+              </div>
+              <div class="arch-layer-tag">User Intent</div>
+            </div>
+
+            <div class="arch-connector-line">↓</div>
+
+            <div class="arch-layer nlp-layer">
+              <div class="arch-layer-badge">
+                <span class="arch-icon">🏷️</span>
+                <span class="arch-layer-name">Product Understanding</span>
+              </div>
+              <div class="arch-layer-desc">
+                Semantic SKU normalization, standardizing varying unit measurements (e.g. 450g vs 500g).
+              </div>
+              <div class="arch-layer-tag">SKU Matching</div>
+            </div>
+
+            <div class="arch-connector-line">↓</div>
+
+            <div class="arch-layer location-layer">
+              <div class="arch-layer-badge">
+                <span class="arch-icon">📍</span>
+                <span class="arch-layer-name">Location Awareness</span>
+              </div>
+              <div class="arch-layer-desc">
+                Pincode & geofenced dark store mapping for local delivery hubs servicing your exact street.
+              </div>
+              <div class="arch-layer-tag">Geofencing</div>
+            </div>
+
+            <div class="arch-connector-line">↓</div>
+
+            <div class="arch-layer inventory-layer">
+              <div class="arch-layer-badge">
+                <span class="arch-icon">📦</span>
+                <span class="arch-layer-name">Inventory Intelligence</span>
+              </div>
+              <div class="arch-layer-desc">
+                Stock verification, SKU substitutes, batch fresh dates, and local dark store availability.
+              </div>
+              <div class="arch-layer-tag">Dark Stores</div>
+            </div>
+
+            <div class="arch-connector-line">↓</div>
+
+            <div class="arch-layer engine-layer">
+              <div class="arch-layer-badge">
+                <span class="arch-icon">⚡</span>
+                <span class="arch-layer-name">Basket Comparison Engine</span>
+              </div>
+              <div class="arch-layer-desc">
+                Computes total landing price: items subtotal + handling fees + delivery fees + surge pricing.
+              </div>
+              <div class="arch-layer-tag">Baskt Core</div>
+            </div>
+
+          </div>
+
+          <div class="arch-destination-stores">
+            <div class="arch-store-card">
+              <h5 style="color:var(--brand-zepto);">Zepto</h5>
+              <span>Direct Micro-hub Route</span>
+            </div>
+            <div class="arch-store-card">
+              <h5 style="color:#C99605;">Blinkit</h5>
+              <span>Dark Store Inventory Feed</span>
+            </div>
+            <div class="arch-store-card">
+              <h5 style="color:var(--brand-instamart);">Instamart</h5>
+              <span>Local Pod Catalog</span>
+            </div>
+            <div class="arch-store-card">
+              <h5 style="color:var(--brand-bigbasket);">BigBasket</h5>
+              <span>BB Now Fast Fulfillment</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 4 — HOW IT WORKS (4 Steps)
+         ====================================================================== -->
+    <section class="section-how" id="how-it-works">
+      <div class="container">
+        <div class="section-how-header">
+          <span class="section-label dark">Workflow</span>
+          <h2 class="display-title">Four steps to absolute grocery clarity.</h2>
+        </div>
+
+        <div class="how-steps-grid">
+          
+          <div class="how-step-card">
+            <div>
+              <div class="how-step-top">
+                <span class="how-step-digit">01</span>
+                <span class="how-step-pill">Input</span>
+              </div>
+              <h3 class="how-step-title">Tell us what you need</h3>
+              <div class="how-step-subtitle">Natural list ingestion</div>
+              <p class="how-step-desc">
+                Paste your grocery list in plain language or drop in recipe ingredients. Our parsing handles brand preferences, weights, and quantity variations automatically.
+              </p>
+            </div>
+            <div class="how-step-interactive-preview">
+              <div class="how-preview-tag">
+                <span>📝</span> "2 milk, eggs, bread, bananas"
+              </div>
+            </div>
+          </div>
+
+          <div class="how-step-card">
+            <div>
+              <div class="how-step-top">
+                <span class="how-step-digit">02</span>
+                <span class="how-step-pill">Geofence</span>
+              </div>
+              <h3 class="how-step-title">Tell us where you are</h3>
+              <div class="how-step-subtitle">Hyperlocal node resolution</div>
+              <p class="how-step-desc">
+                Quick-commerce pricing is entirely localized. We identify the specific dark stores, micro-warehouses, and delivery zones servicing your street right now.
+              </p>
+            </div>
+            <div class="how-step-interactive-preview">
+              <div class="how-preview-tag">
+                <span>📍</span> Adyar, Chennai (600020)
+              </div>
+            </div>
+          </div>
+
+          <div class="how-step-card">
+            <div>
+              <div class="how-step-top">
+                <span class="how-step-digit">03</span>
+                <span class="how-step-pill">Reconcile</span>
+              </div>
+              <h3 class="how-step-title">We compare the basket</h3>
+              <div class="how-step-subtitle">Deterministic whole-cart math</div>
+              <p class="how-step-desc">
+                We calculate total landed costs including item substitutions, handling surcharges, rain surge, and free-delivery thresholds across all available platforms.
+              </p>
+            </div>
+            <div class="how-step-interactive-preview">
+              <div class="how-preview-tag">
+                <span>⚖️</span> 5 Platforms Compared in 420ms
+              </div>
+            </div>
+          </div>
+
+          <div class="how-step-card">
+            <div>
+              <div class="how-step-top">
+                <span class="how-step-digit">04</span>
+                <span class="how-step-pill">Decision</span>
+              </div>
+              <h3 class="how-step-title">You choose where to buy</h3>
+              <div class="how-step-subtitle">Transparent platform choice</div>
+              <p class="how-step-desc">
+                Review unclouded totals, delivery speeds, and verified stock. Pick the merchant that best matches your budget and time preferences without app hopping.
+              </p>
+            </div>
+            <div class="how-step-interactive-preview">
+              <div class="how-preview-tag">
+                <span>🏆</span> Instamart Saves ₹41 (11m ETA)
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 5 — LIVE CONCEPT DEMO (Interactive Simulator)
+         ====================================================================== -->
+    <section class="section-demo" id="demo">
+      <div class="container">
+        <div class="demo-header-wrapper">
+          <div class="demo-header-text">
+            <span class="section-label dark">Interactive Prototype</span>
+            <h2 class="display-title">Simulated Basket Engine</h2>
+            <p>Experience how multi-platform basket reconciliation works with live items, quantities, and location routing.</p>
+          </div>
+          <div class="concept-disclaimer-pill">
+            <span>ℹ️</span> Concept demonstration · Model data
+          </div>
+        </div>
+
+        <div class="simulator-layout">
+          
+          <!-- Left Panel: Input Basket & Location -->
+          <div class="simulator-input-panel">
+            <div class="simulator-panel-header">
+              <h3>Shopping Basket</h3>
+              <span id="sim-item-count-badge" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--color-olive-dark); font-weight:700;">6 ITEMS</span>
+            </div>
+
+            <!-- Quick Add Catalog Chips -->
+            <div style="margin-bottom:10px;">
+              <span style="font-family:var(--font-mono); font-size:0.72rem; color:var(--color-text-muted); font-weight:700; text-transform:uppercase;">Quick Add Essentials:</span>
+            </div>
+            <div id="quick-catalog-chips" class="quick-catalog-chips">
+              <!-- Populated by JS -->
+            </div>
+
+            <!-- Location Dropdown -->
+            <div class="location-dropdown-wrapper">
+              <label for="sim-location-select" class="location-dropdown-label">Delivery Pincode / Zone</label>
+              <select id="sim-location-select" class="location-select" aria-label="Select Delivery Location">
+                <!-- Populated by JS -->
+              </select>
+            </div>
+
+            <!-- Dynamic Shopping Items List -->
+            <div id="sim-items-container" class="sim-items-list">
+              <!-- Populated by JS with quantity controls (+ / -) -->
+            </div>
+
+            <button type="button" id="btn-simulate-calc" class="btn-simulate-run">
+              <span>⚡</span> Re-calculate Baskets
+            </button>
+
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid var(--color-sand-border); text-align:center;">
+              <a href="tel:+919965985951" style="font-family:var(--font-mono); font-size:0.78rem; font-weight:700; color:var(--color-olive-dark);">
+                📞 Partner inquiries? Call Us
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Panel: Results & Comparison -->
+          <div class="simulator-results-panel">
+            
+            <div id="sim-scanning-box" class="sim-scanning-state">
+              <div class="scanner-radar">
+                <span style="font-size:1.8rem;">📡</span>
+              </div>
+              <h4 style="font-family:var(--font-display); font-size:1.3rem; margin-bottom:8px; color:var(--color-forest); font-weight:800;">
+                Checking Nearby Inventory...
+              </h4>
+              <p id="scanning-status-text" style="font-family:var(--font-mono); font-size:0.85rem; color:var(--color-text-muted);">
+                Querying local fulfillment zones...
+              </p>
+            </div>
+
+            <div id="sim-results-box" class="sim-active-results">
+              
+              <!-- Real-Time Savings Ribbon -->
+              <div id="savings-banner-ribbon" class="savings-banner-ribbon">
+                <div class="savings-banner-title">
+                  <span>💡</span>
+                  <span id="savings-text-desc">Best basket found: Swiggy Instamart saves ₹41 vs Blinkit.</span>
+                </div>
+                <span id="savings-badge-val" class="savings-banner-badge">₹41 Cheaper (5.8% Savings)</span>
+              </div>
+
+              <!-- 5 Platform Cards Grid -->
+              <div id="platforms-cards-grid" class="platforms-cards-grid">
+                <!-- Populated dynamically by JS -->
+              </div>
+
+              <!-- Relative Price Comparison Bar Chart -->
+              <div class="relative-comparison-graph">
+                <div class="rel-graph-title">Basket Price Relative Benchmark</div>
+                <div id="rel-graph-bars-container">
+                  <!-- Populated by JS -->
+                </div>
+              </div>
+
+              <!-- Itemized Table Breakdown -->
+              <div class="itemized-breakdown-section">
+                <div class="breakdown-header">
+                  <h4 id="breakdown-platform-title">Platform Itemized Breakdown</h4>
+                  <div id="breakdown-summary-meta"></div>
+                </div>
+
+                <div style="overflow-x:auto;">
+                  <table class="breakdown-table">
+                    <thead>
+                      <tr>
+                        <th>Matched Product</th>
+                        <th>Qty</th>
+                        <th>Unit Price</th>
+                        <th style="text-align:right;">Subtotal</th>
+                      </tr>
+                    </thead>
+                    <tbody id="breakdown-tbody">
+                      <!-- Populated by JS -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 6 — WHY LOCATION MATTERS
+         ====================================================================== -->
+    <section class="section-location" id="technology">
+      <div class="container">
+        <div class="section-location-header">
+          <span class="section-label light">Hyperlocal Dynamics</span>
+          <h2 class="display-title">
+            Same product.<br />
+            Different location.<br />
+            Different store.<br />
+            Different inventory.<br />
+            Different price.
+          </h2>
+          <div style="display:inline-block; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.18); border-radius:var(--radius-md); padding:10px 20px; margin-top:14px; font-family:var(--font-mono); font-size:0.88rem; color:#92DE78;">
+            A distance of 800 meters can alter your grocery bill by up to 18%.
+          </div>
+        </div>
+
+        <div class="location-flow-grid">
+          
+          <div class="location-diagram-card">
+            <div class="location-pipeline-step">
+              <div class="loc-step-icon">📍</div>
+              <div class="loc-step-info">
+                <h5>1. User Pincode & Street Geofence</h5>
+                <p>Pinpoints the exact delivery radial zone (e.g. Adyar, Chennai 600020).</p>
+              </div>
+            </div>
+
+            <div class="location-pipeline-step">
+              <div class="loc-step-icon">🏬</div>
+              <div class="loc-step-info">
+                <h5>2. Nearby Fulfilment Stores</h5>
+                <p>Identifies active Zepto, Blinkit, and Instamart dark pods within 2.3km.</p>
+              </div>
+            </div>
+
+            <div class="location-pipeline-step">
+              <div class="loc-step-icon">📦</div>
+              <div class="loc-step-info">
+                <h5>3. Local Micro-Inventory</h5>
+                <p>Verifies real-time stock levels and eliminates phantom availability.</p>
+              </div>
+            </div>
+
+            <div class="location-pipeline-step">
+              <div class="loc-step-icon">⚡</div>
+              <div class="loc-step-info">
+                <h5>4. Current Availability & Surge</h5>
+                <p>Calculates dynamic handling fees, rain surcharges, and order minimums.</p>
+              </div>
+            </div>
+
+            <div class="location-pipeline-step" style="background:rgba(91,132,24,0.2); border-color:rgba(123,175,34,0.4);">
+              <div class="loc-step-icon" style="background:var(--color-olive); color:#FFFFFF;">💰</div>
+              <div class="loc-step-info">
+                <h5 style="color:#A4EA88;">5. True Basket Landing Price</h5>
+                <p style="color:rgba(255,255,255,0.85);">Guaranteed checkout parity without surprise end-of-funnel additions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-side-cards">
+            <div class="loc-stat-card">
+              <h4>Dark Store Stock Asymmetry</h4>
+              <p>
+                Unlike e-commerce warehouses with central stock, quick-commerce operates hundreds of micro-depots. What is in stock in one neighborhood is often sold out or differently priced 2 kilometers away.
+              </p>
+            </div>
+
+            <div class="loc-stat-card">
+              <h4>Stealth Surcharges & Small Cart Multipliers</h4>
+              <p>
+                Platforms adjust packaging fees, handling charges, and night/rain surge dynamically based on localized rider density. Baskt reconciles these before you commit.
+              </p>
+            </div>
+
+            <div class="loc-stat-card">
+              <h4>Autonomous SKU Equivalence</h4>
+              <p>
+                If your preferred bread brand is sold out in one dark store, our semantic matcher locates equivalent grade-A whole wheat alternatives with identical gram weights.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 7 — THE INTELLIGENCE (7 Vectors & Core Axiom)
+         ====================================================================== -->
+    <section class="section-intelligence" id="intelligence">
+      <div class="container">
+        <div class="intelligence-hero-banner">
+          <span class="section-label dark">Deep Commerce AI</span>
+          <h2 class="display-title">Not just price comparison.</h2>
+          <p>
+            Comparing a grocery order requires multidimensional intelligence across pack sizes, live stock, and platform fees.
+          </p>
+        </div>
+
+        <div class="intelligence-grid-7">
+          
+          <div class="intel-vector-card">
+            <div class="intel-vector-top">
+              <span class="intel-icon-box">🎯</span>
+              <span class="intel-tag">Cross-SKU</span>
+            </div>
+            <h4 class="intel-title">Product Matching</h4>
+            <p class="intel-desc">Cross-platform SKU canonicalization maps identical items despite disparate naming conventions.</p>
+          </div>
+
+          <div class="intel-vector-card">
+            <div class="intel-vector-top">
+              <span class="intel-icon-box">⚖️</span>
+              <span class="intel-tag">Unit Parity</span>
+            </div>
+            <h4 class="intel-title">Pack Size</h4>
+            <p class="intel-desc">Converts 450g vs 500g vs 1kg variations to standardized cost-per-gram metrics for fair comparison.</p>
+          </div>
+
+          <div class="intel-vector-card">
+            <div class="intel-vector-top">
+              <span class="intel-icon-box">📦</span>
+              <span class="intel-tag">Dark Store Stock</span>
+            </div>
+            <h4 class="intel-title">Availability</h4>
+            <p class="intel-desc">Verifies stock down to the specific micro-fulfillment center, preventing out-of-stock checkout dropoffs.</p>
+          </div>
+
+          <div class="intel-vector-card">
+            <div class="intel-vector-top">
+              <span class="intel-icon-box">📍</span>
+              <span class="intel-tag">Hyperlocal</span>
+            </div>
+            <h4 class="intel-title">Location</h4>
+            <p class="intel-desc">Resolves dynamic geofenced catalog boundaries that shift kilometer by kilometer across city blocks.</p>
+          </div>
+
+          <div class="intel-vector-card">
+            <div class="intel-vector-top">
+              <span class="intel-icon-box">🏬</span>
+              <span class="intel-tag">Batch Freshness</span>
+            </div>
+            <h4 class="intel-title">Store Inventory</h4>
+            <p class="intel-desc">Accounts for local batch expirations, SKU rotations, and freshness indicators across active pods.</p>
+          </div>
+
+          <div class="intel-vector-card">
+            <div class="intel-vector-top">
+              <span class="intel-icon-box">⚡</span>
+              <span class="intel-tag">Landed Cost</span>
+            </div>
+            <h4 class="intel-title">Platform Fees</h4>
+            <p class="intel-desc">Factors in small-cart fees, rain surges, night delivery surcharges, handling fees, and packaging charges.</p>
+          </div>
+
+          <div class="intel-vector-card" style="grid-column: span 2; background:var(--pastel-mint); border-color:var(--pastel-mint-border);">
+            <div class="intel-vector-top">
+              <span class="intel-icon-box">🛒</span>
+              <span class="intel-tag" style="background:#FFFFFF;">Whole-Cart Math</span>
+            </div>
+            <h4 class="intel-title">Basket-Level Pricing</h4>
+            <p class="intel-desc">Optimizes the total order rather than isolated items, unlocking platform delivery fee waivers and bulk volume promotions.</p>
+          </div>
+
+        </div>
+
+        <div class="basket-axiom-callout">
+          <div class="axiom-pre">Our Foundational Principle</div>
+          <h3 class="axiom-statement">
+            "We compare the basket, not just the product."
+          </h3>
+          <p class="axiom-explainer">
+            Single-product price checkers fail because grocery shopping is a multi-item decision. Free delivery thresholds, handling fees, and mixed-item availability determine which platform actually wins.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 8 — FUTURE EXPERIENCE (Roadmap & Autonomous Sync)
+         ====================================================================== -->
+    <section class="section-future" id="future">
+      <div class="container">
+        <div class="section-future-header">
+          <span class="section-label dark">Roadmap</span>
+          <h2 class="display-title">The Future Experience</h2>
+          <p>
+            From unified comparison today to authorized one-touch checkout orchestration tomorrow.
+          </p>
+        </div>
+
+        <div class="future-flow-banner">
+          <div class="flow-step-item">
+            <div class="flow-step-badge">1</div>
+            <span class="flow-step-name">Compare</span>
+          </div>
+          <span class="flow-step-arrow">→</span>
+
+          <div class="flow-step-item">
+            <div class="flow-step-badge">2</div>
+            <span class="flow-step-name">Choose A Store</span>
+          </div>
+          <span class="flow-step-arrow">→</span>
+
+          <div class="flow-step-item">
+            <div class="flow-step-badge" style="background:var(--color-olive);">3</div>
+            <span class="flow-step-name">Prepare Your Basket</span>
+          </div>
+          <span class="flow-step-arrow">→</span>
+
+          <div class="flow-step-item">
+            <div class="flow-step-badge" style="background:var(--color-accent-amber);">4</div>
+            <span class="flow-step-name">Continue To Checkout</span>
+          </div>
+        </div>
+
+        <div class="roadmap-cards-grid">
+          
+          <div class="roadmap-tier-card active-phase">
+            <span class="tier-phase-tag">Phase 01 · Present State</span>
+            <h3 class="tier-title">Unified Intelligence</h3>
+            <div class="tier-points-list">
+              <div class="tier-point">
+                <span class="tier-point-check">✓</span>
+                <span>Hyperlocal catalog normalization across 5 quick-commerce players</span>
+              </div>
+              <div class="tier-point">
+                <span class="tier-point-check">✓</span>
+                <span>Deterministic whole-basket calculation with handling & surge breakdown</span>
+              </div>
+              <div class="tier-point">
+                <span class="tier-point-check">✓</span>
+                <span>Natural language list ingestion with gram-weight equivalents</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="roadmap-tier-card coming-next">
+            <span class="tier-phase-tag" style="color:var(--color-forest);">Phase 02 · In Pipeline (Coming Next)</span>
+            <h3 class="tier-title">Autonomous Basket Sync</h3>
+            <div class="tier-points-list">
+              <div class="tier-point">
+                <span class="tier-point-check">→</span>
+                <span>Authorized basket export into target merchant apps via secure handoff</span>
+              </div>
+              <div class="tier-point">
+                <span class="tier-point-check">→</span>
+                <span>Personalized brand loyalty preferences and dietary constraint rules</span>
+              </div>
+              <div class="tier-point">
+                <span class="tier-point-check">→</span>
+                <span>Real-time dark store restock alerts for out-of-stock list items</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="roadmap-tier-card" style="background:var(--color-sand);">
+            <span class="tier-phase-tag">Phase 03 · Future Vision</span>
+            <h3 class="tier-title">Agentic Checkout</h3>
+            <div class="tier-points-list">
+              <div class="tier-point">
+                <span class="tier-point-check">⏳</span>
+                <span>Authorized agent checkout via user-delegated payment tokenization</span>
+              </div>
+              <div class="tier-point">
+                <span class="tier-point-check">⏳</span>
+                <span>Split-basket fulfillment (e.g. dairy via Zepto 9m, staples via BB Now)</span>
+              </div>
+              <div class="tier-point">
+                <span class="tier-point-check">⏳</span>
+                <span>Predictive recurring replenishment based on household consumption</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <p style="text-align:center; font-family:var(--font-mono); font-size:0.75rem; color:var(--color-text-muted); margin-top:32px;">
+          * Future automation and agent checkout protocols are shown conceptually and represent our forward engineering roadmap.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 9 — VISION & COMMERCE FLYWHEEL (Motion Graphics)
+         ====================================================================== -->
+    <section class="section-vision" id="vision">
+      <div class="container">
+        <div class="vision-header">
+          <span class="section-label light">Long-Term Thesis</span>
+          <h2 class="display-title">
+            Commerce is fragmented.<br />
+            Your shopping shouldn't be.
+          </h2>
+          <p>
+            We're building the intelligence layer that helps people navigate a fragmented commerce ecosystem.
+          </p>
+        </div>
+
+        <div class="flywheel-showcase">
+          
+          <div class="flywheel-graphic-container">
+            <div class="flywheel-circle" aria-hidden="true">
+              <div class="flywheel-node-orbit node-pos-1">1</div>
+              <div class="flywheel-node-orbit node-pos-2">2</div>
+              <div class="flywheel-node-orbit node-pos-3">3</div>
+              <div class="flywheel-node-orbit node-pos-4">4</div>
+              <div class="flywheel-node-orbit node-pos-5">5</div>
+            </div>
+
+            <div class="flywheel-center-core">
+              <span>Baskt</span>
+              <span style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.06em; margin-top:4px;">FLYWHEEL</span>
+            </div>
+          </div>
+
+          <div class="flywheel-stages-list">
+            
+            <div class="flywheel-stage-item">
+              <span class="flywheel-stage-num">01</span>
+              <div class="flywheel-stage-text">
+                <h5>Aggregated Consumer Intent</h5>
+                <p>Households define their grocery needs once, freed from individual app interfaces.</p>
+              </div>
+            </div>
+
+            <div class="flywheel-stage-item">
+              <span class="flywheel-stage-num">02</span>
+              <div class="flywheel-stage-text">
+                <h5>Multi-Store Indexing Engine</h5>
+                <p>Continuous micro-catalog and dynamic delivery fee reconciliation across local nodes.</p>
+              </div>
+            </div>
+
+            <div class="flywheel-stage-item">
+              <span class="flywheel-stage-num">03</span>
+              <div class="flywheel-stage-text">
+                <h5>Optimal Basket Routing</h5>
+                <p>Deterministic whole-cart optimization balancing price, item availability, and delivery ETA.</p>
+              </div>
+            </div>
+
+            <div class="flywheel-stage-item">
+              <span class="flywheel-stage-num">04</span>
+              <div class="flywheel-stage-text">
+                <h5>Compounded Consumer Savings</h5>
+                <p>Direct savings of ₹1,200 to ₹3,500 every month on routine domestic essentials.</p>
+              </div>
+            </div>
+
+            <div class="flywheel-stage-item">
+              <span class="flywheel-stage-num">05</span>
+              <div class="flywheel-stage-text">
+                <h5>Ecosystem Efficiency & Parity</h5>
+                <p>Merchants compete on authentic inventory freshness, delivery reliability, and fair pricing.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 10 — FINAL CTA WITH CALL US & WAITLIST
+         ====================================================================== -->
+    <section class="section-final-cta" id="waitlist">
+      <div class="container">
+        <div class="cta-box-wrapper">
+          <span class="section-label light">Early Access</span>
+          <h2 class="display-title cta-headline">
+            Your basket.<br />
+            Every option.<br />
+            One clear view.
+          </h2>
+          <p class="cta-subcopy">
+            Be part of the early cohort experiencing transparent, unified commerce intelligence in your neighborhood.
+          </p>
+
+          <div class="cta-buttons-row">
+            <button type="button" class="btn-pill btn-light-primary trigger-waitlist-modal" style="padding:14px 32px; font-size:1rem;">
+              Join the waitlist
+            </button>
+            <a href="tel:+919965985951" class="btn-pill btn-light-outline" style="padding:14px 32px; font-size:1rem;">
+              <span>📞</span> Call Us
+            </a>
+          </div>
+
+          <div class="cta-direct-call-badge">
+            Partner or Investor? <a href="tel:+919965985951">Call Us Directly</a> for briefings.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       SITE FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <div class="footer-brand">
+          <h3>Baskt</h3>
+          <p>
+            An intelligent shopping basket comparison layer for India's quick-commerce ecosystem. One basket, every store, better decisions.
+          </p>
+          <div style="margin-top:16px;">
+            <a href="tel:+919965985951" style="font-family:var(--font-mono); font-size:0.86rem; color:#92DE78; font-weight:700; display:inline-flex; align-items:center; gap:8px;">
+              <span>📞</span> Call Us Directly
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Platform</div>
+          <div class="footer-col-links">
+            <a href="#product">Product Concept</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#demo">Simulated Demo</a>
+            <a href="#technology">Hyperlocal Layer</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Architecture</div>
+          <div class="footer-col-links">
+            <a href="#technology">Geofence Routing</a>
+            <a href="#technology">SKU Normalization</a>
+            <a href="#technology">Fee Reconciliation</a>
+            <a href="#vision">The Flywheel</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Contact & Connect</div>
+          <div class="footer-col-links">
+            <a href="tel:+919965985951">Call Us</a>
+            <a href="#" class="trigger-waitlist-modal">Early Access Waitlist</a>
+            <a href="#" class="trigger-waitlist-modal">Partner Inquiries</a>
+            <a href="#" class="trigger-waitlist-modal">Investor Relations</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Baskt Technologies, Inc. All rights reserved.
+        </div>
+        <div class="footer-disclaimer-note">
+          Notice: Baskt is a conceptual technology showcase and research prototype. Store trademarks (Zepto, Blinkit, Swiggy Instamart, BigBasket, Amazon) are property of their respective owners. Baskt does not process transactions, payments, or commercial deliveries.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       SESSION COOKIE BANNER (Black, Stretched, Low Height)
+       ======================================================================== -->
+  <div id="cookie-banner" class="cookie-session-banner" role="region" aria-label="Session and Cookie Preferences">
+    <div class="cookie-content-wrap">
+      <span class="cookie-icon">⚡</span>
+      <div class="cookie-text">
+        <h5>Optimize Session for Faster Loading</h5>
+        <p>We cache your delivery geofence in a local session cookie for instant sub-millisecond dark store queries.</p>
+      </div>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" id="btn-accept-cookies" class="btn-cookie-accept">
+        Enable Fast Cache
+      </button>
+      <button type="button" id="btn-dismiss-cookies" class="btn-cookie-dismiss">
+        Dismiss
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL DIALOG: WAITLIST & DIRECT CALL
+       ======================================================================== -->
+  <div id="waitlist-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" aria-label="Close dialog">✕</button>
+      
+      <div class="modal-header">
+        <h3 id="modal-title">Connect with Baskt</h3>
+        <p>Join our early access cohort or speak directly with our team.</p>
+      </div>
+
+      <div style="background:var(--color-cream); border:1px solid var(--color-sand-border); border-radius:var(--radius-md); padding:12px 16px; margin-bottom:18px; display:flex; align-items:center; justify-content:space-between;">
+        <span style="font-size:0.86rem; font-weight:700; color:var(--color-forest);">📞 Prefer an immediate call?</span>
+        <a href="tel:+919965985951" class="btn-pill btn-call-us" style="padding:6px 14px; font-size:0.82rem;">
+          Call Us
+        </a>
+      </div>
+
+      <form id="waitlist-form" class="waitlist-form-group">
+        <div class="input-field-wrap">
+          <label for="wl-name">Your Full Name</label>
+          <input type="text" id="wl-name" placeholder="Your Name" required />
+        </div>
+
+        <div class="input-field-wrap">
+          <label for="wl-email">Work or Personal Email</label>
+          <input type="email" id="wl-email" placeholder="name@domain.com" required />
+        </div>
+
+        <div class="input-field-wrap">
+          <label for="wl-city">City & Pincode</label>
+          <input type="text" id="wl-city" placeholder="e.g. Chennai 600020" required />
+        </div>
+
+        <div class="input-field-wrap">
+          <label for="wl-role">I am connecting as a...</label>
+          <select id="wl-role">
+            <option value="consumer">Consumer (Looking for optimal basket savings)</option>
+            <option value="investor">Angel / Venture Investor</option>
+            <option value="partner">Commerce / Quick-Commerce Partner</option>
+            <option value="tech">Software Engineer / Researcher</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-pill btn-primary" style="padding:13px; font-size:0.95rem; margin-top:4px;">
+          Submit Details
+        </button>
+      </form>
+
+      <div id="waitlist-success" class="waitlist-success-msg">
+        <div class="success-check-icon">✓</div>
+        <h4 style="font-family:var(--font-display); font-size:1.3rem; margin-bottom:6px; color:var(--color-forest); font-weight:800;">
+          You're Connected!
+        </h4>
+        <p style="font-size:0.88rem; color:var(--color-text-muted);">
+          Thank you for reaching out. We have registered your session. You can also reach our desk anytime using the <strong>Call Us</strong> button.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
